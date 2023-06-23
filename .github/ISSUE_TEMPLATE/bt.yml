@@ -18,38 +18,36 @@ body:
   - type: textarea
     id: descripiton
     attributes:
-      label: Jak wywołać błąd?
+      label: Opis błędu
       description: Opisz na czym polega błąd.
-      placeholder: np. "Po uruchomieniu aplikacji ... i wypełnienieu pola ... nie ma walidacji wartości."
-      value: "<table><tr><td>test</td></tr></table>"
+      placeholder: 
+      value: "np. Po uruchomieniu aplikacji ... i wypełnienieu pola ... nie ma walidacji wartości."
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: System
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: System
+      description: Jakiego systemu dotyczy zgłoszenie?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - Developerski
+        - Testowy
+        - PreProdukcji
+        - Produkcja
     validations:
       required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
   - type: textarea
-    id: logs
+    id: asIs
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+      label: Stan aktualny
+      description: Opisz jaki jest stan aktualny rozwiązania
+  - type: textarea
+    id: toBe
+    attributes:
+      label: Stan oczekiwany
+      description: Opisz jaki jest stan oczekiwany rozwiązania
+
+      
   - type: checkboxes
     id: terms
     attributes:
