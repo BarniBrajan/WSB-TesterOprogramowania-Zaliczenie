@@ -1,5 +1,4 @@
-
-name: BugTemplate 
+name: TestCaseTemplate 
 description: Formularz zgłoszenia defektu
 title: "[Bug]: "
 labels: ["bug"]
