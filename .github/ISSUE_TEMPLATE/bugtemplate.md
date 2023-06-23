@@ -11,3 +11,9 @@ Date:
 Description:
 As is:
 To Be:
+
+title:
+      type: input.checkbox
+      label: Your label.
+      description: Your description.
+      default: true
