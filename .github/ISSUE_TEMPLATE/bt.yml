@@ -38,12 +38,12 @@ body:
       placeholder: BP, FPP3
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: issueRelation
     attributes:
       label: Powiązane zgłoszenia
       description: Wprowadź numer powiązanych zgłoszeń 
-      placeholder: #3
+      placeholder: "#3"
     validations:
       required: true
   - type: textarea
