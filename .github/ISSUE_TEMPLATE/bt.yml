@@ -18,6 +18,18 @@ body:
         - Krytyczny
     validations:
       required: true      
+  - type: dropdown
+    id: System
+    attributes:
+      label: System
+      description: Jakiego systemu dotyczy zgłoszenie?
+      options:
+        - Developerski
+        - Testowy
+        - PreProdukcji
+        - Produkcja
+    validations:
+      required: true
   - type: input
     id: appTransaction
     attributes:
@@ -36,20 +48,6 @@ body:
     validations:
       required: true
       
-
-      
-  - type: dropdown
-    id: System
-    attributes:
-      label: System
-      description: Jakiego systemu dotyczy zgłoszenie?
-      options:
-        - Developerski
-        - Testowy
-        - PreProdukcji
-        - Produkcja
-    validations:
-      required: true
   - type: textarea
     id: asIs
     attributes:
