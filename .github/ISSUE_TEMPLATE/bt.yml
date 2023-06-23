@@ -7,24 +7,7 @@ body:
     attributes:
       value: |
         Wypełnij starannie wszystkie poniższe pola. Precyzyjnie opisany błąd pozwoli na szybsze rozwiązanie problemu.
-  - type: input
-    id: appTransaction
-    attributes:
-      label: Aplikacja/ Transakcja
-      description: Wprowadź nazwe aplikacji lub transakcji
-      placeholder: BP, FPP3
-    validations:
-      required: true
-  - type: textarea
-    id: descripiton
-    attributes:
-      label: Opis błędu
-      description: Opisz na czym polega błąd.
-      placeholder: 
-      value: "np. Po uruchomieniu aplikacji ... i wypełnienieu pola ... nie ma walidacji wartości."
-    validations:
-      required: true
-  - type: dropdown
+    - type: dropdown
     id: priorytet
     attributes:
       label: Priorytet
@@ -47,6 +30,23 @@ body:
         - Produkcja
     validations:
       required: true
+  - type: input
+    id: appTransaction
+    attributes:
+      label: Aplikacja/ Transakcja
+      description: Wprowadź nazwe aplikacji lub transakcji
+      placeholder: BP, FPP3
+    validations:
+      required: true
+  - type: textarea
+    id: descripiton
+    attributes:
+      label: Opis błędu
+      description: Opisz na czym polega błąd.
+      placeholder: 
+      value: "np. Po uruchomieniu aplikacji ... i wypełnienieu pola ... nie ma walidacji wartości."
+    validations:
+      required: true
   - type: textarea
     id: asIs
     attributes:
@@ -66,5 +66,5 @@ body:
     id: dane
     attributes:
       label: Dane na jakich pojawił się błąd
-      description: Podaj dane użyte, gdy pojawił się błąd
+      description: Podaj dane użyte dla wskazanego błędu
       
