@@ -42,8 +42,7 @@ body:
     id: issueRelation
     attributes:
       label: Powiązane zgłoszenia
-      description: Wprowadź numer powiązanych zgłoszeń 
-      placeholder: "#3"
+      description: Wprowadź numer powiązanych zgłoszeń rozpoczynając od znaku '#'
     validations:
       required: true
   - type: textarea
