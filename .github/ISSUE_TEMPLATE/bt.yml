@@ -25,6 +25,17 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: priorytet
+    attributes:
+      label: Priorytet
+      options:
+        - Niski
+        - Średni
+        - Wysoki
+        - Krytyczny
+    validations:
+      required: true      
+  - type: dropdown
     id: System
     attributes:
       label: System
@@ -46,13 +57,14 @@ body:
     attributes:
       label: Stan oczekiwany
       description: Opisz jaki jest stan oczekiwany rozwiązania
-
-      
-  - type: checkboxes
-    id: terms
+  - type: textarea
+    id: kroki
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      label: Kroki do wywołania błędu
+      description: Opisz w jaki sposób ponowić błąd
+  - type: textarea
+    id: dane
+    attributes:
+      label: Dane na jakich pojawił się błąd
+      description: Podaj dane użyte, gdy pojawił się błąd
+      
