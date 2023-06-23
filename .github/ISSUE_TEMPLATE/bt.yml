@@ -63,6 +63,8 @@ body:
     attributes:
       label: Kroki do wywołania błędu
       description: Opisz w jaki sposób ponowić błąd
+      placeholder: 
+      value: "1. Uruchom transkację ... 2. Wypełnij pole ... 3. Kliknij zapisz 4. Dane zapiszą się bez walidacji"
   - type: textarea
     id: dane
     attributes:
