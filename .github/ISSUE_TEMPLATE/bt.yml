@@ -7,17 +7,17 @@ body:
     attributes:
       value: |
         Wypełnij starannie wszystkie poniższe pola. Precyzyjnie opisany błąd pozwoli na szybsze rozwiązanie problemu.
-    - type: dropdown
-    id: priorytet
-    attributes:
-      label: Priorytet
-      options:
-        - Niski
-        - Średni
-        - Wysoki
-        - Krytyczny
-    validations:
-      required: true      
+  - type: dropdown
+  id: priorytet
+  attributes:
+    label: Priorytet
+    options:
+      - Niski
+      - Średni
+      - Wysoki
+      - Krytyczny
+  validations:
+    required: true      
   - type: dropdown
     id: System
     attributes:
