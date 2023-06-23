@@ -38,7 +38,7 @@ body:
       placeholder: BP, FPP3
     validations:
       required: true
-- type: input
+  - type: input
     id: issueRelation
     attributes:
       label: Powiązane zgłoszenia
@@ -46,7 +46,6 @@ body:
       placeholder: #3
     validations:
       required: true
-
   - type: textarea
     id: descripiton
     attributes:
@@ -56,7 +55,6 @@ body:
       value: "np. Po uruchomieniu aplikacji ... i wypełnienieu pola ... nie ma walidacji wartości."
     validations:
       required: true
-      
   - type: textarea
     id: asIs
     attributes:
