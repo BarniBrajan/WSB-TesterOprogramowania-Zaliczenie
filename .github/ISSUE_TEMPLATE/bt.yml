@@ -1,23 +1,26 @@
-name: BugTemplate 
+---
+name: BugTemplate
 description: Formularz zgłoszenia defektu
 title: "[Bug]: "
-labels: ["bug"]
+labels:
+  - bug
 body:
   - type: markdown
     attributes:
-      value: |
-        Wypełnij starannie wszystkie poniższe pola. Precyzyjnie opisany błąd pozwoli na szybsze rozwiązanie problemu.
+      value: >
+        Wypełnij starannie wszystkie poniższe pola. Precyzyjnie opisany błąd
+        pozwoli na szybsze rozwiązanie problemu.
   - type: dropdown
-  id: priorytet
-  attributes:
+    id: priorytet
+    attributes: null
     label: Priorytet
     options:
       - Niski
       - Średni
       - Wysoki
       - Krytyczny
-  validations:
-    required: true      
+    validations: null
+    required: true
   - type: dropdown
     id: System
     attributes:
@@ -43,8 +46,9 @@ body:
     attributes:
       label: Opis błędu
       description: Opisz na czym polega błąd.
-      placeholder: 
-      value: "np. Po uruchomieniu aplikacji ... i wypełnienieu pola ... nie ma walidacji wartości."
+      placeholder: null
+      value: np. Po uruchomieniu aplikacji ... i wypełnienieu pola ... nie ma
+        walidacji wartości.
     validations:
       required: true
   - type: textarea
@@ -67,4 +71,3 @@ body:
     attributes:
       label: Dane na jakich pojawił się błąd
       description: Podaj dane użyte dla wskazanego błędu
-      
