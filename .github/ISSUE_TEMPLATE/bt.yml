@@ -18,10 +18,10 @@ body:
   - type: textarea
     id: descripiton
     attributes:
-      label: Opis błędu
-      description: <table><tr><td>test</td></tr></table>
-      placeholder: 
-      value: "A bug happened!"
+      label: Jak wywołać błąd?
+      description: Opisz na czym polega błąd.
+      placeholder: np. "Po uruchomieniu aplikacji ... i wypełnienieu pola ... nie ma walidacji wartości."
+      value: "<table><tr><td>test</td></tr></table>"
     validations:
       required: true
   - type: dropdown
