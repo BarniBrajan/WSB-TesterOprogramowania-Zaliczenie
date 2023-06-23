@@ -1,36 +1,12 @@
----
-name: BugTemplate
+name: BugTemplate 
 description: Formularz zgłoszenia defektu
 title: "[Bug]: "
-labels:
-  - bug
+labels: ["bug"]
 body:
   - type: markdown
     attributes:
-      value: Wypełnij starannie wszystkie poniższe pola. Precyzyjnie opisany błąd pozwoli na szybsze rozwiązanie problemu.
-  - type: dropdown
-    id: priorytet
-    attributes: null
-    label: Priorytet
-    options:
-      - Niski
-      - Średni
-      - Wysoki
-      - Krytyczny
-    validations: null
-    required: true
-  - type: dropdown
-    id: System
-    attributes:
-      label: System
-      description: Jakiego systemu dotyczy zgłoszenie?
-      options:
-        - Developerski
-        - Testowy
-        - PreProdukcji
-        - Produkcja
-    validations:
-      required: true
+      value: |
+        Wypełnij starannie wszystkie poniższe pola. Precyzyjnie opisany błąd pozwoli na szybsze rozwiązanie problemu.
   - type: input
     id: appTransaction
     attributes:
@@ -44,9 +20,31 @@ body:
     attributes:
       label: Opis błędu
       description: Opisz na czym polega błąd.
-      placeholder: null
-      value: np. Po uruchomieniu aplikacji ... i wypełnienieu pola ... nie ma
-        walidacji wartości.
+      placeholder: 
+      value: "np. Po uruchomieniu aplikacji ... i wypełnienieu pola ... nie ma walidacji wartości."
+    validations:
+      required: true
+  - type: dropdown
+    id: priorytet
+    attributes:
+      label: Priorytet
+      options:
+        - Niski
+        - Średni
+        - Wysoki
+        - Krytyczny
+    validations:
+      required: true      
+  - type: dropdown
+    id: System
+    attributes:
+      label: System
+      description: Jakiego systemu dotyczy zgłoszenie?
+      options:
+        - Developerski
+        - Testowy
+        - PreProdukcji
+        - Produkcja
     validations:
       required: true
   - type: textarea
@@ -68,4 +66,5 @@ body:
     id: dane
     attributes:
       label: Dane na jakich pojawił się błąd
-      description: Podaj dane użyte dla wskazanego błędu
+      description: Podaj dane użyte, gdy pojawił się błąd
+      
