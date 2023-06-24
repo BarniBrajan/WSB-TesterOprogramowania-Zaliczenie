@@ -1,7 +1,7 @@
 name: TestScenariousTemplate 
 description: Formularz zgłoszenia defektu
 title: "[TestScenarious]: "
-labels: ["test-scenarious"]
+labels: ["test-scen"]
 body:
   - type: markdown
     attributes:
