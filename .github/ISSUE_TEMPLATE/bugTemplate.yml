@@ -41,7 +41,7 @@ body:
   - type: textarea
     id: issueRelation
     attributes:
-      label: Powiązane zgłoszenia
+      label: Powiązane Scenariusze testowe lub przypadki testowe
       description: Wprowadź numer powiązanych zgłoszeń rozpoczynając od znaku '#'
     validations:
       required: true
