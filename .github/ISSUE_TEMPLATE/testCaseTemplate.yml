@@ -1,0 +1,42 @@
+name: TestCaseTemplate 
+description: Formularz zgłoszenia defektu
+title: "[TestCase]: "
+labels: ["test-case"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Wypełnij starannie wszystkie poniższe pola. Precyzyjnie opisany przypadek testowy pozwoli sprawnie przetestować rozwiązanie.
+  - type: input
+    id: appTransaction
+    attributes:
+      label: Aplikacja/ Transakcja
+      description: Wprowadź nazwe aplikacji lub transakcji
+      placeholder: BP, FPP3
+    validations:
+      required: true
+  - type: textarea
+    id: issueRelation
+    attributes:
+      label: Powiązane Scenariusze testowe lub przypadki testowe
+      description: Wprowadź numer powiązanych scenariuszy lub przypadków testowych
+  - type: textarea
+    id: preconditions
+    attributes:
+      label: Warunki wstępne
+      description: Opisz warunki wstępne niezbędne do ropoczęcia testu
+      placeholder: 
+      value: "np. Przygotuj dane podstawowe klienta w transakcji BP"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Kroki testowe
+      description: Opisz w pkt kroki jakie należy wykonać
+  - type: textarea
+    id: result
+    attributes:
+      label: Oczekiwany rezultat
+      description: Opisz w pkt jakie są oczekiwane rezultaty
+      
