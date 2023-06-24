@@ -1,0 +1,43 @@
+name: TestScenariousTemplate 
+description: Formularz zgłoszenia defektu
+title: "[TestScenarious]: "
+labels: ["test-scenarious"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Wypełnij starannie wszystkie poniższe pola. Precyzyjnie opisany scenariusz testowy pozwoli sprawnie przetestować rozwiązanie.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Obszar
+      options:
+        - FiCa
+        - Biling
+        - Model danych
+        - Produkty VAS
+        - CRM
+        - Urządzenia
+        - Odczyty
+    validations:
+      required: true 
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Wymagania
+      description: Wprowadź numery wymagań funkcjonalnych
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Opis 
+      description: Opisz scenariusz testowy, czego dotyczy, jaki jest cel itd.
+    validations:
+      required: true
+  - type: textarea
+    id: test-cases
+    attributes:
+      label: Przypadki testowe
+      description: Wskaż powiązane przypadki testowe np. #3 #4 
+      
