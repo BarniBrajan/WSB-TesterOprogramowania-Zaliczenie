@@ -2,6 +2,7 @@ name: TestCaseTemplate
 description: Formularz zgłoszenia defektu
 title: "[TestCase]: "
 labels: ["test-case"]
+status: ["Backlog"]
 body:
   - type: markdown
     attributes:
