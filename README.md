@@ -1,2 +1,2 @@
-# test_zaliczenie
-test zaliczenie
+# WSB-TesterOprogramowania-Zaliczenie
+Repozytorium dla konfiguracji projektu WSB-TesterOprogramowania-Zaliczenie
